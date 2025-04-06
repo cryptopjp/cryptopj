@@ -1,74 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <title>Crypto.PJ</title>
-  <!-- Link Styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto PJ</title>
+  <!-- Link of Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="sidebar open">
-   <div class="logo_details">
-  <img src="cryptopjlogo.jpg" alt="Logo" class="logo_img">
-  <div class="logo_name">Crypto.PJ</div>
-  <i class="bx bx-menu" id="btn"></i>
-</div>
-    <ul class="nav-list">
-      <li class="active">
-        <a href="#">
-          <i class="bx bx-home"></i>
-          <span class="link_name">Home</span>
+  <aside class="sidebar">
+    <!-- Sidebar header -->
+    <header class="sidebar-header">
+      <a href="#" class="header-logo">
+        <img src="logo.jpg" alt="CryptoPJ">
+      </a>
+      <button class="toggler sidebar-toggler">
+        <span class="material-symbols-rounded">chevron_left</span>
+      </button>
+      <button class="toggler menu-toggler">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </header>
+
+    <nav class="sidebar-nav">
+      <!-- Primary top nav -->
+     <ul class="nav-list primary-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Dashboard</span>
+          <span class="nav-label">Dashboard</span>
         </a>
-        <span class="tooltip">Home</span>
+        <span class="nav-tooltip">Dashboard</span>
       </li>
-      <li>
-        <a href="#">
-          <i class="bx bx-desktop"></i>
-          <span class="link_name">Desktop Mining</span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Devices</span>
+          <span class="nav-label">Desktop Mining</span>
         </a>
-        <span class="tooltip">Desktop Mining</span>
+        <span class="nav-tooltip">Desktop Mining</span>
       </li>
-      <li>
-        <a href="#">
-          <i class="bx bx-mobile"></i>
-          <span class="link_name">Mobile Mining</span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Smartphone</span>
+          <span class="nav-label">Mobile Mining</span>
         </a>
-        <span class="tooltip">Mobile Mining</span>
+        <span class="nav-tooltip">Mobile Mining</span>
       </li>
-      <li>
-        <a href="#">
-          <i class="bx bx-task"></i>
-          <span class="link_name">Task-to-Earn Airdrop</span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Task</span>
+          <span class="nav-label">Task-to-Earn Airdrop</span>
         </a>
-        <span class="tooltip">Task-to-Earn Airdrop</span>
+        <span class="nav-tooltip">Task-to-Earn Airdrop</span>
       </li>
-      <li>
-        <a href="#">
-          <i class="bx bx-wallet"></i>
-          <span class="link_name">Crypto Wallet</span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Wallet</span>
+          <span class="nav-label">Crypto Wallet</span>
         </a>
-        <span class="tooltip">Crypto Wallet</span>
+        <span class="nav-tooltip">Crypto Wallet</span>
       </li>
-      <li>
-        <a href="#">
-          <i class="bx bxs-user-detail"></i>
-          <span class="link_name">The Beginner's Guide</span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Supervisor_Account</span>
+          <span class="nav-label">The Beginner's Guide</span>
         </a>
-        <span class="tooltip">The Beginner's Guide</span>
+        <span class="nav-tooltip">The Beginner's Guide</span>
       </li>
-      <li>
-        <a href="#">
-          <i class="bx bx-user"></i>
-          <span class="link_name">About Us</span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Workspace_Premium</span>
+          <span class="nav-label">About Us</span>
         </a>
-        <span class="tooltip">About Us</span>
+        <span class="nav-tooltip">About Us</span>
       </li>
-    </ul>
-  </div>
-  <section class="home-section">
-    <div class="text">Home</div>
-  </section>
-  <!-- Scripts -->
+     </ul>
+
+      <!-- Secondary botton nav --> 
+     <ul class="nav-list secondary-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Pages</span>
+          <span class="nav-label">Facebook Page</span>
+        </a>
+        <span class="nav-tooltip">Facebook Page</span>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">Pages</span>
+          <span class="nav-label">Community Group</span>
+        </a>
+        <span class="nav-tooltip">Community Group</span>
+      </li>
+     </ul>
+    </nav>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>
