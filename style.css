@@ -10,21 +10,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(45deg,#FCCB06, #595956,#1F2626, #0D0D0D);
-  background-size: 300% 300%;
-  animation: color 12s ease-in-out infinite;
-}
-
-@keyframes color {
-  0%{
-    background-position: 0% 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }  
-  100%{
-    background-position: 0% 50%;
-  }
+  background: linear-gradient(#F1FAFF, #CBE4FF);
 }
 
 .sidebar {
@@ -236,3 +222,28 @@ body {
     margin: 40px 0 30px;
   }
 }
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.header-logo .logo-text {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease 0.3s;
+}
+
+
+.sidebar.collapsed .header-logo .logo-text {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
