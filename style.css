@@ -258,7 +258,7 @@ body {
     margin: 13px;
     border-radius: 16px;
     background: #151A2D;
-    max-height: 56px;
+    max-height: 100vh;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
   }
