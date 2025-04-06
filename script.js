@@ -23,13 +23,26 @@ sidebarToggler.addEventListener("click", () => {
     setTimeout(() => {
       logoText.style.opacity = "1";
       logoText.style.pointerEvents = "auto";
-    },5); // adjust delay here
+    }, 200); // Delay slightly longer to match animation
   }
 });
 
-// Menu toggle
+// Smooth Menu toggle
 const toggleMenu = (isMenuActive) => {
-  sidebar.style.height = isMenuActive ? `${sidebar.scrollHeight}px` : collapsedSidebarHeight;
+  const fullHeight = sidebar.scrollHeight + "px";
+
+  if (isMenuActive) {
+    sidebar.style.height = collapsedSidebarHeight; // Start collapsed
+    requestAnimationFrame(() => {
+      sidebar.style.height = fullHeight; // Animate to full
+    });
+  } else {
+    sidebar.style.height = sidebar.scrollHeight + "px"; // Lock current height
+    requestAnimationFrame(() => {
+      sidebar.style.height = collapsedSidebarHeight; // Animate to collapse
+    });
+  }
+
   menuToggler.querySelector("span").innerText = isMenuActive ? "close" : "menu";
 };
 
@@ -47,4 +60,3 @@ window.addEventListener("resize", () => {
     toggleMenu(sidebar.classList.contains("menu-active"));
   }
 });
-
